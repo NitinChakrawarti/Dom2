@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="devoic.jpg" type="image/x-icon">
+    <title>Dom-2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="card">
+        <div class="profile" id="profile">
+            <i class="ri-heart-fill"></i>
+        </div>
+    </div>
+    <script>
+
+        let profile = document.querySelector('#profile');
+        let icon = document.querySelector('i');
+
+        profile.addEventListener("dblclick", function () {
+            icon.style.transform = 'scale(2)'
+            icon.style.opacity = '.8'
+
+            setTimeout(() => {
+
+                icon.style.opacity = 0;
+            }, 600);
+            setTimeout(() => {
+                icon.style.transform = 'scale(0)'
+            }, 1200);
+        })
+
+    </script>
+</body>
+
+</html>

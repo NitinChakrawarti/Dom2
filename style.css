@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+body {
+    /* background-image: linear-gradient(to right bottom, rgb(255,255,255), rgb(0, 0, 0)); */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 3vmax;
+}
+.card {
+    height: 25vmax;
+    width: 22vmax;
+    background-color: aliceblue;
+    border-radius: .5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile {
+    width: 100%;
+    height:100%;
+    border-radius: .5vmax;
+    margin-top: 2vmax;
+    border: 2px solid grey;
+    background-image: url("profile.jpg");
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i{
+        font-size: 3vmax;
+        color: aliceblue;
+        opacity: .7;
+        transform: scale(0);
+        transition: ease 0.5s;
+    }
+}
